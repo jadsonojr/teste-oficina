@@ -225,7 +225,7 @@ async def create_part(part: PartCreate):
     await db.parts.insert_one(part_data.model_dump())
     return part_data
 
-@app.get("/api/parts/low-stock")
+@app.get("/api/parts/low-stock", response_model=List[Part])
 async def get_low_stock_parts():
     threshold_setting = await db.settings.find_one({"key": "low_stock_threshold"})
     threshold = threshold_setting["value"] if threshold_setting else 5

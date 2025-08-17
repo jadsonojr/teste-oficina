@@ -396,14 +396,17 @@ async def get_sales_report(start_date: str, end_date: str):
     except ValueError:
         raise HTTPException(status_code=400, detail="Invalid date format. Use YYYY-MM-DD")
     
-    sales = await db.sales.find({
+    sales_data = await db.sales.find({
         "date": {"$gte": start, "$lte": end}
     }).to_list(1000)
     
+    # Convert to Sale models to handle serialization
+    sales = [Sale(**sale) for sale in sales_data]
+    
     total_sales = len(sales)
-    total_revenue = sum(sale["total"] for sale in sales)
-    parts_revenue = sum(sale["subtotal_parts"] for sale in sales)
-    services_revenue = sum(sale["subtotal_services"] for sale in sales)
+    total_revenue = sum(sale.total for sale in sales)
+    parts_revenue = sum(sale.subtotal_parts for sale in sales)
+    services_revenue = sum(sale.subtotal_services for sale in sales)
     
     return {
         "period": {"start": start_date, "end": end_date},
@@ -411,7 +414,7 @@ async def get_sales_report(start_date: str, end_date: str):
         "total_revenue": total_revenue,
         "parts_revenue": parts_revenue,
         "services_revenue": services_revenue,
-        "sales": sales
+        "sales": [sale.model_dump() for sale in sales]
     }
 
 if __name__ == "__main__":

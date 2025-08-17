@@ -391,8 +391,8 @@ async def update_setting(key: str, setting_update: SettingUpdate):
 @app.get("/api/reports/sales")
 async def get_sales_report(start_date: str, end_date: str):
     try:
-        start = datetime.strptime(start_date, "%Y-%m-%d").date()
-        end = datetime.strptime(end_date, "%Y-%m-%d").date()
+        start = datetime.strptime(start_date, "%Y-%m-%d")
+        end = datetime.strptime(end_date + " 23:59:59", "%Y-%m-%d %H:%M:%S")
     except ValueError:
         raise HTTPException(status_code=400, detail="Invalid date format. Use YYYY-MM-DD")
     

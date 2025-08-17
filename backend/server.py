@@ -340,7 +340,7 @@ async def create_sale(sale: SaleCreate):
     # Create sale
     sale_data = Sale(
         sale_number=sale_number,
-        date=date.today(),
+        date=datetime.now().date(),
         customer_id=sale.customer_id,
         customer_data=customer_data,
         items=sale.items,

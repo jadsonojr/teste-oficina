@@ -225,6 +225,14 @@ async def create_part(part: PartCreate):
     await db.parts.insert_one(part_data.model_dump())
     return part_data
 
+@app.get("/api/parts/low-stock")
+async def get_low_stock_parts():
+    threshold_setting = await db.settings.find_one({"key": "low_stock_threshold"})
+    threshold = threshold_setting["value"] if threshold_setting else 5
+    
+    parts = await db.parts.find({"stock_quantity": {"$lte": threshold}}).to_list(1000)
+    return parts
+
 @app.get("/api/parts/{part_id}", response_model=Part)
 async def get_part(part_id: str):
     part = await db.parts.find_one({"id": part_id})
@@ -256,14 +264,6 @@ async def delete_part(part_id: str):
     if result.deleted_count == 0:
         raise HTTPException(status_code=404, detail="Part not found")
     return {"message": "Part deleted successfully"}
-
-@app.get("/api/parts/low-stock")
-async def get_low_stock_parts():
-    threshold_setting = await db.settings.find_one({"key": "low_stock_threshold"})
-    threshold = threshold_setting["value"] if threshold_setting else 5
-    
-    parts = await db.parts.find({"stock_quantity": {"$lte": threshold}}).to_list(1000)
-    return parts
 
 # Services endpoints
 @app.get("/api/services", response_model=List[Service])

@@ -103,7 +103,7 @@ class SaleItem(BaseModel):
 class Sale(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     sale_number: str
-    date: date
+    date: datetime
     customer_id: Optional[str] = None
     customer_data: Optional[dict] = None
     items: List[SaleItem]

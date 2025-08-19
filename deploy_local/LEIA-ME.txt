@@ -1,0 +1,38 @@
+=====================================
+  SISTEMA GESTÃO OFICINA MECÂNICA
+=====================================
+
+🎯 SISTEMA 100% OFFLINE - SEM INTERNET!
+
+📋 O QUE ESTÁ INCLUSO:
+• Sistema completo de vendas
+• Controle de estoque de peças  
+• Cadastro de clientes e serviços
+• Relatórios de vendas e estoque
+• Recibos não fiscais para impressão
+• Numeração automática de vendas
+
+🚀 INSTALAÇÃO RÁPIDA:
+1. Execute: INSTALAR.bat (Windows) ou ./install.sh (Linux)
+2. Execute: INICIAR.bat (Windows) ou ./start.sh (Linux)
+3. Abra navegador: http://localhost:3000
+
+📞 SUPORTE:
+• Funciona sem internet
+• Dados salvos localmente
+• Zero mensalidades
+• Sem limitações
+
+🔧 REQUISITOS MÍNIMOS:
+• Windows 10+ ou Linux Ubuntu 18+
+• 4GB RAM mínimo
+• 2GB espaço em disco
+
+🏠 USO EM REDE LOCAL:
+• Execute: INICIAR-REDE.bat
+• Acesse de outros computadores
+• Compartilhe dados na oficina
+
+=====================================
+SISTEMA PRONTO PARA SUA OFICINA!
+=====================================

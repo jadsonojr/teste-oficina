@@ -511,7 +511,7 @@ const NewSaleForm = ({ onSaleCreated }) => {
 
     try {
       const saleData = {
-        customer_id: selectedCustomer || null,
+        customer_id: selectedCustomer === "none" ? null : selectedCustomer || null,
         items: saleItems
       };
       

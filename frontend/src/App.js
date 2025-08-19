@@ -537,12 +537,12 @@ const NewSaleForm = ({ onSaleCreated }) => {
       {/* Customer Selection */}
       <div>
         <Label htmlFor="customer">Cliente (Opcional)</Label>
-        <Select value={selectedCustomer} onValueChange={setSelectedCustomer}>
+        <Select value={selectedCustomer || undefined} onValueChange={setSelectedCustomer}>
           <SelectTrigger>
             <SelectValue placeholder="Selecione um cliente" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">Nenhum cliente</SelectItem>
+            <SelectItem value="none">Nenhum cliente</SelectItem>
             {customers.map((customer) => (
               <SelectItem key={customer.id} value={customer.id}>
                 {customer.name} - {customer.phone}

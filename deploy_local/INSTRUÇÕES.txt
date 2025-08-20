@@ -1,0 +1,76 @@
+=========================================
+   GESTÃO OFICINA MECÂNICA - OFFLINE
+=========================================
+
+🎯 SISTEMA COMPLETO SEM INTERNET!
+
+📦 CONTEÚDO DO PACOTE:
+• Sistema completo de vendas offline
+• Controle inteligente de estoque  
+• Cadastro de clientes e serviços
+• Relatórios avançados de vendas
+• Recibos não fiscais para impressão térmica
+• Numeração automática por data
+• Sistema de backup/restauração
+
+🚀 INSTALAÇÃO SUPER RÁPIDA:
+
+WINDOWS:
+1. Baixe e instale (com internet):
+   • Python: https://python.org (MARCAR "Add to PATH")
+   • Node.js: https://nodejs.org  
+   • MongoDB: https://mongodb.com/download-center/community
+
+2. Execute: INSTALAR.bat
+3. Execute: INICIAR.bat  
+4. Acesse: http://localhost:3000
+
+LINUX:
+1. sudo apt install python3 nodejs mongodb
+2. ./install.sh  
+3. ./start.sh
+4. Acesse: http://localhost:3000
+
+🌐 USO EM REDE LOCAL:
+• Execute: INICIAR-REDE.bat
+• Acesse de outros PCs: http://IP-DO-SERVIDOR:3000
+
+🔧 FUNCIONALIDADES:
+✅ Vendas com numeração automática (YYYYMMDDXXX)
+✅ Estoque com baixa automática
+✅ Clientes com histórico completo
+✅ Serviços personalizáveis
+✅ Recibos para impressora térmica (80mm)
+✅ Relatórios por período
+✅ Alertas de estoque baixo configurável
+✅ Interface moderna e responsiva
+✅ Backup/restauração automática
+
+💾 COMANDOS ÚTEIS:
+• INICIAR.bat     → Iniciar sistema local
+• INICIAR-REDE.bat → Compartilhar na rede
+• PARAR.bat       → Parar sistema
+• BACKUP.bat      → Fazer backup completo
+• RESTAURAR.bat   → Restaurar backup
+
+🔒 SEGURANÇA:
+• Dados salvos localmente
+• Sem conexão externa
+• Backup automático disponível
+• Sem taxas ou mensalidades
+
+📞 CARACTERÍSTICAS:
+• Funciona 100% offline
+• Zero dependência de internet
+• Interface em português
+• Otimizado para oficinas
+• Suporte a múltiplos usuários em rede
+
+🎉 PRONTO PARA USO!
+Após instalação, o sistema funcionará
+completamente offline em sua oficina.
+
+=========================================
+        SISTEMA PROFISSIONAL 
+       SEM CUSTO MENSAL!
+=========================================

@@ -1,0 +1,72 @@
+=========================================
+   GESTAO OFICINA MECANICA - OFFLINE
+=========================================
+
+SISTEMA COMPLETO SEM INTERNET!
+
+PROBLEMA COM CARACTERES ESPECIAIS RESOLVIDO!
+
+CONTEUDO DO PACOTE:
+- Sistema completo de vendas offline
+- Controle inteligente de estoque  
+- Cadastro de clientes e servicos
+- Relatorios avancados de vendas
+- Recibos nao fiscais para impressao termica
+- Numeracao automatica por data
+- Sistema de backup/restauracao
+
+INSTALACAO SUPER RAPIDA:
+
+WINDOWS:
+1. Baixe e instale (com internet):
+   - Python: https://python.org (MARCAR "Add to PATH")
+   - Node.js: https://nodejs.org  
+   - MongoDB: https://mongodb.com/download-center/community
+
+2. Execute: INSTALAR-SIMPLES.bat
+3. Execute: INICIAR-SIMPLES.bat  
+4. Acesse: http://localhost:3000
+
+USO EM REDE LOCAL:
+- Execute: INICIAR-REDE.bat
+- Acesse de outros PCs: http://IP-DO-SERVIDOR:3000
+
+FUNCIONALIDADES:
+* Vendas com numeracao automatica (YYYYMMDDXXX)
+* Estoque com baixa automatica
+* Clientes com historico completo
+* Servicos personalizaveis
+* Recibos para impressora termica (80mm)
+* Relatorios por periodo
+* Alertas de estoque baixo configuravel
+* Interface moderna e responsiva
+* Backup/restauracao automatica
+
+COMANDOS UTEIS:
+- INSTALAR-SIMPLES.bat     -> Instalar sistema
+- INICIAR-SIMPLES.bat      -> Iniciar sistema local
+- PARAR-SIMPLES.bat        -> Parar sistema
+- BACKUP-SIMPLES.bat       -> Fazer backup completo
+- DIAGNOSTICO-SIMPLES.bat  -> Verificar problemas
+
+SEGURANCA:
+- Dados salvos localmente
+- Sem conexao externa
+- Backup automatico disponivel
+- Sem taxas ou mensalidades
+
+CARACTERISTICAS:
+- Funciona 100% offline
+- Zero dependencia de internet
+- Interface em portugues
+- Otimizado para oficinas
+- Suporte a multiplos usuarios em rede
+
+PRONTO PARA USO!
+Apos instalacao, o sistema funcionara
+completamente offline em sua oficina.
+
+=========================================
+        SISTEMA PROFISSIONAL 
+       SEM CUSTO MENSAL!
+=========================================
